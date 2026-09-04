@@ -18,7 +18,15 @@
     --radius-large: 24px;
     --radius-medium: 16px;
     --radius-small: 10px;
-    --max-width: 1180px;
+
+    /* Tidigare 1180px */
+    --max-width: 1380px;
+}
+
+.section-container,
+.header-container {
+    width: min(calc(100% - 56px), var(--max-width));
+    margin-inline: auto;
 }
 
 /* =========================
