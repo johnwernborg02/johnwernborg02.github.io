@@ -987,6 +987,375 @@ p {
 }
 
 /* =========================
+   Gemensam kompakt layout
+   ========================= */
+
+/*
+   Porträttsektionen och kompetenssektionen ändras inte.
+   Följande regler gör resten av webbplatsen lika kompakt.
+*/
+
+/* Gemensamma rubrikstorlekar */
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    margin-bottom: 12px;
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.section-heading > p:last-child {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+/* =========================
+   Projekt på startsidan
+   ========================= */
+
+.projects-section {
+    padding-top: 48px;
+    padding-bottom: 55px;
+    background: var(--sky-light);
+}
+
+.project-grid {
+    gap: 18px;
+}
+
+.project-card {
+    border-radius: 16px;
+}
+
+.project-image {
+    height: 220px;
+}
+
+.project-content {
+    padding: 21px;
+}
+
+.project-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.project-content > p:not(.project-category) {
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.project-category {
+    margin-bottom: 6px;
+    font-size: 0.7rem;
+}
+
+.tag-list {
+    gap: 6px;
+    margin-block: 15px;
+}
+
+.tag-list span {
+    padding: 4px 9px;
+    font-size: 0.7rem;
+}
+
+.project-links {
+    gap: 10px 18px;
+    padding-top: 14px;
+}
+
+.project-links a {
+    font-size: 0.84rem;
+}
+
+/* Rapportfältet under projekten */
+
+.reports-banner {
+    margin-top: 34px;
+    padding: 28px 32px;
+    border-radius: 16px;
+}
+
+.reports-banner h2 {
+    margin-bottom: 7px;
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+}
+
+.reports-banner p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   Introduktion på undersidor
+   ========================= */
+
+.page-hero {
+    padding-block: 55px;
+}
+
+.page-hero h1 {
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.page-hero .page-introduction {
+    font-size: clamp(1.05rem, 1.8vw, 1.22rem);
+    line-height: 1.6;
+}
+
+/* =========================
+   Projektsidan
+   ========================= */
+
+.project-details-section {
+    padding-block: 55px;
+}
+
+.project-detail-list {
+    gap: 65px;
+}
+
+.project-detail {
+    gap: clamp(35px, 5vw, 65px);
+}
+
+.project-detail-image img {
+    min-height: 320px;
+    max-height: 410px;
+    border-radius: 16px;
+}
+
+.project-detail-content h2 {
+    margin-bottom: 14px;
+    font-size: clamp(1.55rem, 2.8vw, 2.2rem);
+}
+
+.project-detail-content > p:not(.project-category, .small-note) {
+    margin-bottom: 13px;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.project-detail-content h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.project-detail-content .button-row {
+    margin-top: 20px;
+}
+
+/* Fältet längst ned på projektsidan */
+
+.cta-section {
+    padding-top: 0;
+    padding-bottom: 55px;
+}
+
+.cta-content {
+    padding: 28px 32px;
+    border-radius: 16px;
+}
+
+.cta-content h2 {
+    margin-bottom: 7px;
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+}
+
+/* =========================
+   Om mig-sidan
+   ========================= */
+
+.about-section {
+    padding-block: 55px;
+}
+
+.about-layout {
+    gap: clamp(40px, 6vw, 75px);
+}
+
+.about-portrait {
+    max-height: 480px;
+    border-radius: 16px;
+}
+
+.quick-facts {
+    margin-top: 18px;
+    padding: 21px;
+}
+
+.quick-facts h2 {
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+}
+
+.quick-facts dl {
+    gap: 13px;
+}
+
+.quick-facts dl > div {
+    padding-bottom: 11px;
+}
+
+.quick-facts dd {
+    font-size: 0.9rem;
+}
+
+.about-content h2 {
+    margin-bottom: 13px;
+    font-size: clamp(1.5rem, 2.7vw, 2.15rem);
+}
+
+.about-content h2:not(:first-of-type) {
+    margin-top: 34px;
+}
+
+.about-content p {
+    margin-bottom: 14px;
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+/* =========================
+   Kontaktsidan
+   ========================= */
+
+.contact-section {
+    min-height: calc(100vh - 76px - 150px);
+    padding-block: 55px;
+}
+
+.contact-layout {
+    gap: clamp(40px, 6vw, 75px);
+}
+
+.contact-introduction h1 {
+    margin-bottom: 17px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.contact-introduction .page-introduction {
+    font-size: clamp(1.05rem, 1.8vw, 1.22rem);
+}
+
+.contact-card {
+    padding: 28px;
+    border-radius: 16px;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+/* =========================
+   Separata projektsidor
+   ========================= */
+
+.project-page-hero {
+    padding-block: 55px;
+}
+
+.project-page-heading {
+    gap: clamp(35px, 5vw, 65px);
+}
+
+.project-page-heading h1 {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.project-page-heading .page-introduction {
+    font-size: clamp(1.05rem, 1.8vw, 1.22rem);
+}
+
+.project-page-image {
+    max-height: 370px;
+    border-radius: 16px;
+}
+
+.back-link {
+    margin-bottom: 17px;
+    font-size: 0.88rem;
+}
+
+.project-page-content {
+    padding-block: 55px;
+}
+
+.project-article-layout {
+    gap: clamp(40px, 6vw, 75px);
+}
+
+.project-article h2 {
+    margin-bottom: 13px;
+    font-size: clamp(1.5rem, 2.7vw, 2.1rem);
+}
+
+.project-article h2:not(:first-child) {
+    margin-top: 34px;
+}
+
+.project-article p,
+.project-article li {
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+.project-sidebar {
+    top: 100px;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.project-sidebar h2 {
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+}
+
+.project-sidebar dl {
+    gap: 12px;
+}
+
+.project-sidebar dl > div {
+    padding-bottom: 11px;
+}
+
+/* =========================
+   Knappar
+   ========================= */
+
+.button {
+    min-height: 43px;
+    padding: 10px 18px;
+    font-size: 0.88rem;
+}
+
+.button-row {
+    gap: 10px;
+    margin-top: 22px;
+}
+
+/* =========================
+   Sidfot
+   ========================= */
+
+.site-footer {
+    padding-block: 30px;
+}
+
+.footer-content {
+    font-size: 0.86rem;
+}
+
+/* =========================
    Fokus och tillgänglighet
    ========================= */
 
@@ -1003,7 +1372,7 @@ button:focus-visible {
 
 @media (max-width: 900px) {
     section {
-        padding-block: 70px;
+        padding-block: 52px;
     }
 
     .intro-layout,
@@ -1041,12 +1410,12 @@ button:focus-visible {
     }
 
     .project-detail-image img {
-        min-height: 360px;
-    }
+       min-height: 300px;
+   }
 
-    .project-detail-list {
-        gap: 80px;
-    }
+   .project-detail-list {
+       gap: 55px;
+   }
 }
 
 
@@ -1062,8 +1431,10 @@ button:focus-visible {
     }
 
     section {
-        padding-block: 58px;
+        padding-block: 42px;
     }
+
+    /* Sidhuvud */
 
     .header-container {
         min-height: auto;
@@ -1093,7 +1464,7 @@ button:focus-visible {
         bottom: 10px;
     }
 
-    /* Presentation och porträtt */
+    /* Porträtt och kort om mig */
 
     .intro-section {
         padding-block: 48px;
@@ -1131,7 +1502,7 @@ button:focus-visible {
         line-height: 1.65;
     }
 
-    /* Kompakta kompetensområden */
+    /* Kompetensområden */
 
     .skills-section {
         padding-block: 40px;
@@ -1150,7 +1521,6 @@ button:focus-visible {
         text-align: left;
     }
 
-    /* En kompetensruta per rad på mobil */
     .compact-skills-grid {
         grid-template-columns: 1fr;
         gap: 9px;
@@ -1165,24 +1535,54 @@ button:focus-visible {
         padding: 3px 14px 13px;
     }
 
-    /* Projekt */
+    /* Projektkort */
 
     .projects-section {
         padding-top: 45px;
-        padding-bottom: 55px;
+        padding-bottom: 50px;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
     }
 
-    .project-content {
-        padding: 23px;
+    .project-image {
+        height: 195px;
     }
 
-    .project-image {
-        height: 230px;
+    .project-content {
+        padding: 19px;
     }
+
+    /* Undersidor och detaljerade projekt */
+
+    .project-detail-list {
+        gap: 48px;
+    }
+
+    .project-detail-image img {
+        min-height: 230px;
+    }
+
+    .page-hero {
+        padding-block: 45px;
+    }
+
+    .contact-card {
+        padding: 21px;
+    }
+
+    .reports-banner,
+    .cta-content {
+        padding: 24px 21px;
+    }
+
+    .project-page-hero,
+    .project-page-content {
+        padding-block: 45px;
+    }
+
+    /* Element som ska placeras lodrätt på mobil */
 
     .heading-row,
     .reports-banner,
@@ -1192,25 +1592,8 @@ button:focus-visible {
         flex-direction: column;
     }
 
-    .reports-banner,
-    .cta-content {
-        padding: 30px 24px;
-    }
-
-    .project-detail-list {
-        gap: 68px;
-    }
-
-    .project-detail-image img {
-        min-height: 260px;
-    }
-
-    .page-hero {
-        padding-block: 70px;
-    }
-
-    .contact-card {
-        padding: 25px;
+    .project-detail.reverse .project-detail-image {
+        order: initial;
     }
 
     .footer-links {
