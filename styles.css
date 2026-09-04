@@ -1575,12 +1575,24 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 
-    @media (max-width: 680px) {
-    .project-image {
-        height: clamp(180px, 58vw, 270px);
-        padding: 8px;
-       }
-    }
+   .project-image,
+   .project-gallery {
+       height: 195px;
+   }
+   
+   .project-image {
+       padding: 8px;
+   }
+   
+   .project-gallery {
+       gap: 5px;
+       padding: 6px;
+   }
+   
+   .project-gallery img {
+       height: 100%;
+       padding: 3px;
+   }
 
     .project-content {
         padding: 19px;
