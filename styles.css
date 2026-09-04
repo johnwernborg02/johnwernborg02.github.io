@@ -392,7 +392,16 @@ p {
     max-width: 780px;
 }
 
-.intro-content .intro-lead {
+.intro-heading {
+    margin-bottom: 18px;
+    color: var(--navy);
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.intro-lead {
     max-width: 760px;
     margin-bottom: 24px;
     color: var(--navy);
