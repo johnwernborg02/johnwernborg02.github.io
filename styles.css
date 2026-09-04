@@ -571,7 +571,13 @@ p {
    ========================= */
 
 .projects-section {
+    padding-top: 52px;
+    padding-bottom: 68px;
     background: var(--sky-light);
+}
+
+.projects-section .section-heading {
+    margin-bottom: 30px;
 }
 
 .project-grid {
@@ -1012,11 +1018,17 @@ button:focus-visible {
     }
 
     .portrait-wrapper {
-        width: min(75%, 420px);
+        width: min(65%, 300px);
+        justify-self: start;
     }
 
     .intro-content {
         max-width: 760px;
+    }
+
+    /* Två kompetensrutor per rad */
+    .compact-skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .about-image-column {
@@ -1036,6 +1048,7 @@ button:focus-visible {
         gap: 80px;
     }
 }
+
 
 /* =========================
    Mobiltelefoner
@@ -1080,22 +1093,89 @@ button:focus-visible {
         bottom: 10px;
     }
 
+    /* Presentation och porträtt */
+
+    .intro-section {
+        padding-block: 48px;
+    }
+
+    .intro-layout {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
     .portrait-wrapper {
-        width: calc(100% - 28px);
+        width: 65%;
+        max-width: 230px;
+        justify-self: start;
+        transform: none;
     }
 
     .portrait-wrapper::before {
-        right: -16px;
-        bottom: -16px;
-        left: 20px;
+        right: -14px;
+        bottom: -14px;
+        left: 18px;
     }
 
-    .skills-grid,
+    .intro-content {
+        max-width: 100%;
+    }
+
+    .intro-heading {
+        margin-bottom: 14px;
+        font-size: 1.65rem;
+    }
+
+    .intro-lead {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    /* Kompakta kompetensområden */
+
+    .skills-section {
+        padding-block: 40px;
+    }
+
+    .compact-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 18px;
+    }
+
+    .compact-section-heading > p {
+        max-width: none;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    /* En kompetensruta per rad på mobil */
+    .compact-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .compact-skill-card summary {
+        min-height: 64px;
+        padding: 11px 14px;
+    }
+
+    .compact-course-list {
+        padding: 3px 14px 13px;
+    }
+
+    /* Projekt */
+
+    .projects-section {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
     }
 
-    .skill-card,
     .project-content {
         padding: 23px;
     }
@@ -1137,7 +1217,6 @@ button:focus-visible {
         gap: 16px;
     }
 }
-
 /* =========================
    Minskad rörelse
    ========================= */
