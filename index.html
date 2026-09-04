@@ -4,155 +4,482 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>John Wernborg | Projektportfölj</title>
-    <meta name="description"
-          content="Projekt inom teknisk fysik, simulering, programmering och kreativt skapande.">
+    <meta
+        name="description"
+        content="Portfolio för John Wernborg – teknisk fysik, simulering, programmering och kreativa projekt."
+    >
+
+    <title>John Wernborg | Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="hero">
-        <nav>
-            <a class="logo" href="index.html">John Wernborg</a>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html">John Wernborg</a>
 
-            <div class="nav-links">
-                <a href="#projekt">Projekt</a>
-                <a href="#om-mig">Om mig</a>
-                <a href="#kontakt">Kontakt</a>
-            </div>
-        </nav>
-
-        <div class="hero-content">
-            <p class="eyebrow">Teknisk fysik · simulering · programmering</p>
-            <h1>Jag modellerar, bygger och berättar.</h1>
-
-            <p>
-                Här samlar jag tekniska projekt, appar, spel,
-                rapporter och kreativa arbeten.
-            </p>
-
-            <a class="button" href="#projekt">Se mina projekt</a>
+            <nav class="main-navigation" aria-label="Huvudmeny">
+                <a class="active" href="index.html">Startsida</a>
+                <a href="projekt.html">Projekt</a>
+                <a href="om-mig.html">Om mig</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section id="projekt">
-            <div class="section-heading">
-                <p class="eyebrow">Utvalda arbeten</p>
-                <h2>Projekt</h2>
-            </div>
+        <!-- Presentation -->
+        <section class="intro-section">
+            <div class="section-container intro-layout">
+                <div class="portrait-wrapper">
+                    <img
+                        class="portrait"
+                        src="assets/images/portrait.jpg"
+                        alt="Porträtt av John Wernborg"
+                    >
+                </div>
 
-            <div class="project-grid">
+                <div class="intro-content">
+                    <p class="eyebrow">Teknisk fysik och elektroteknik</p>
 
-                <article class="project-card">
-                    <img src="assets/images/tfya17-light-blue-vacancies.png"
-                         alt="Visualisering av vanadiumnitrid">
+                    <h1>Hej, jag heter John Wernborg.</h1>
 
-                    <div class="project-content">
-                        <p class="tag">Simulering · Python</p>
-                        <h3>Vakansdefekter i vanadiumnitrid</h3>
+                    <p class="intro-lead">
+                        Jag arbetar med modellering och simulering av fysik och
+                        data med en kreativ touch.
+                    </p>
 
-                        <p>
-                            Metropolis Monte Carlo-simuleringar med en
-                            maskininlärd interatomär potential för att undersöka
-                            defektenergi och atomära konfigurationer.
-                        </p>
+                    <p>
+                        Jag studerar teknisk fysik och elektroteknik vid
+                        Linköpings universitet. Jag tycker särskilt om projekt
+                        där fysik, matematik och programmering används för att
+                        förstå, simulera eller visualisera komplexa system.
+                    </p>
 
-                        <div class="project-links">
-                            <a href="reports/vanadium-nitride.pdf">Läs rapporten</a>
-                            <a href="projects/vanadium-nitride.html">Om projektet</a>
-                        </div>
+                    <div class="button-row">
+                        <a class="button primary-button" href="projekt.html">
+                            Se mina projekt
+                        </a>
+
+                        <a class="button secondary-button" href="om-mig.html">
+                            Läs mer om mig
+                        </a>
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <img src="assets/images/tsbk07-in-project-image.png"
-                         alt="Skärmbild från Flying Simulator of a Space Ranger on a Volcanic Planet">
-
-                    <div class="project-content">
-                        <p class="tag">C++ · OpenGL</p>
-                        <h3>Flying Space Ranger</h3>
-
-                        <p>
-                            Ett flygsimulator skapad i OpenGL på en vulkanplanet med terräng,
-                            ljussättning, kollisionshantering och första- och
-                            tredjepersonskamera.
-                        </p>
-
-                        <div class="project-links">
-                            <a href="videos/space-game-demo.mp4">Se demo</a>
-                            <a href="projects/space-game.html">Om projektet</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <img src="assets/images/app.jpg"
-                         alt="Skärmbilder från Android-appen">
-
-                    <div class="project-content">
-                        <p class="tag">Java · Android</p>
-                        <h3>Android-app</h3>
-
-                        <p>
-                            Beskriv vilket problem appen löser, vad du själv
-                            utvecklade och vilka tekniska val du gjorde.
-                        </p>
-
-                        <div class="project-links">
-                            <a href="projects/android-app.html">Om projektet</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <img src="assets/images/the-starwyns.jpg"
-                         alt="Konceptbild för The Starwyns">
-
-                    <div class="project-content">
-                        <p class="tag">Kreativt skrivande · Pågående</p>
-                        <h3>The Starwyns</h3>
-
-                        <p>
-                            En science fantasy-berättelse om en kungafamilj,
-                            plikt och friheten att själv välja vem man vill vara.
-                        </p>
-
-                        <div class="project-links">
-                            <a href="projects/the-starwyns.html">Upptäck berättelsen</a>
-                            <a href="writing/the-starwyns-sample.pdf">Läs ett smakprov</a>
-                        </div>
-                    </div>
-                </article>
-
+                </div>
             </div>
         </section>
 
-        <section id="om-mig" class="about">
-            <div>
-                <p class="eyebrow">Om mig</p>
-                <h2>Teknik med både analys och berättelse</h2>
-            </div>
+        <!-- Kompetenser -->
+        <section class="skills-section">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">Kunskaper och utbildning</p>
+                    <h2>Mina kompetensområden</h2>
 
-            <p>
-                Jag studerar teknisk fysik och elektroteknik vid Linköpings
-                universitet. Jag arbetar gärna i gränslandet mellan fysik,
-                simulering och programmering, men driver också kreativa projekt
-                inom grafik, kommunikation och skrivande.
-            </p>
+                    <p>
+                        Ett urval av de områden och verktyg jag har arbetat med,
+                        tillsammans med relevanta kurser från utbildningen.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Flygteknik</h3>
+
+                        <ul class="course-list">
+                            <li>
+                                <strong>TMMV01 Aerodynamik</strong>
+                                <span class="status ongoing">Pågående</span>
+                            </li>
+
+                            <li>
+                                <strong>TMME50 Flygmekanik</strong>
+                                <span class="status ongoing">Pågående</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Teoretisk fysik</h3>
+
+                        <ul class="course-list">
+                            <li>TTFY54 Kvantmekanik</li>
+                            <li>TFYA90 Beräkningsfysik</li>
+                            <li>TFYA40 Analytisk mekanik</li>
+                            <li>TFYM01 Fasta tillståndets fysik</li>
+                            <li>TFYA12 Termodynamik och statistisk mekanik</li>
+                            <li>TYFB05 och TFYB09 Elektromagnetism I och II</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Matematik</h3>
+
+                        <ul class="course-list">
+                            <li>TATA77 Fourieranalys</li>
+                            <li>TATA45 Komplex analys</li>
+                            <li>TATA65 Diskret matematik</li>
+                            <li>TATA44 Vektoranalys</li>
+                            <li>TATA43 Flervariabelanalys</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Reglering och signaler</h3>
+
+                        <ul class="course-list">
+                            <li>
+                                <strong>TSFS12 Autonoma farkoster</strong>
+                                <span class="status ongoing">Pågående</span>
+                            </li>
+
+                            <li>TFYA75 Fysik – kandidatprojekt</li>
+                            <li>TSRT12 Reglerteknik</li>
+                            <li>TSDT18 Signaler och system</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Python</h3>
+
+                        <ul class="course-list">
+                            <li>
+                                <strong>TFYB13 Projektkurs i teknisk fysik</strong>
+                                <span class="status ongoing">Pågående</span>
+                            </li>
+
+                            <li>TFYA17 Projektlaborationer i fysik</li>
+                            <li>TDDE23 Funktionell och imperativ programmering, del 1</li>
+                            <li>TDDE24 Funktionell och imperativ programmering, del 2</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>MATLAB</h3>
+
+                        <ul class="course-list">
+                            <li>TANA21 Beräkningsmatematik</li>
+                            <li>TAOP07 Optimeringslära, grundkurs</li>
+                            <li>TMME69 Mekanik, fördjupningskurs</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Programmering</h3>
+
+                        <ul class="course-list">
+                            <li><strong>C++:</strong> TDDE71 Programmering och datastrukturer</li>
+                            <li><strong>Android:</strong> TDDD80 Mobila och sociala applikationer</li>
+                            <li><strong>Assembly:</strong> TSEA28 Datorteknik</li>
+                            <li><strong>OpenGL:</strong> TSBK07 Datorgrafik</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Elektronik</h3>
+
+                        <ul class="course-list">
+                            <li>TSTE05 Elektronik och mätteknik</li>
+                            <li>TSEA51 Digitalteknik</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Utvalda projekt -->
+        <section class="projects-section">
+            <div class="section-container">
+                <div class="section-heading heading-row">
+                    <div>
+                        <p class="eyebrow">Portfolio</p>
+                        <h2>Utvalda projekt</h2>
+
+                        <p>
+                            Ett urval av projekt inom fysik, programmering,
+                            simulering och kreativt arbete.
+                        </p>
+                    </div>
+
+                    <a class="text-link" href="projekt.html">
+                        Visa alla projekt →
+                    </a>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Fysikprojekt -->
+                    <article class="project-card">
+                        <img
+                            class="project-image"
+                            src="assets/images/fysikprojekt.jpg"
+                            alt="Visualisering från fysikprojektet"
+                        >
+
+                        <div class="project-content">
+                            <p class="project-category">Fysik och simulering</p>
+
+                            <h3>Monte Carlo-simulering av vakanser i vanadiumnitrid</h3>
+
+                            <p>
+                                Ett projekt om atomistiska simuleringar,
+                                materialfysik och maskininlärda potentialer.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Python</span>
+                                <span>Monte Carlo</span>
+                                <span>Materialfysik</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projekt.html#fysikprojekt">
+                                    Om projektet
+                                </a>
+
+                                <a
+                                    href="DIN-GOOGLE-DRIVE-LANK"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Läs rapporten ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kandidatprojekt -->
+                    <article class="project-card">
+                        <img
+                            class="project-image"
+                            src="assets/images/kandidatprojekt.jpg"
+                            alt="Bild av sveptunnelmikroskopet"
+                        >
+
+                        <div class="project-content">
+                            <p class="project-category">Fysik och elektronik</p>
+
+                            <h3>Kandidatprojekt: sveptunnelmikroskop</h3>
+
+                            <p>
+                                Konstruktion och utvärdering av ett
+                                sveptunnelmikroskop med fokus på precision,
+                                mätteknik och reglering.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Elektronik</span>
+                                <span>Reglering</span>
+                                <span>Mätteknik</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projekt.html#kandidatprojekt">
+                                    Om projektet
+                                </a>
+
+                                <a
+                                    href="DIN-GOOGLE-DRIVE-LANK"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Läs rapporten ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Datorgrafik -->
+                    <article class="project-card">
+                        <img
+                            class="project-image"
+                            src="assets/images/datorgrafik.jpg"
+                            alt="Skärmbild från datorgrafikprojektet Flying Space Ranger"
+                        >
+
+                        <div class="project-content">
+                            <p class="project-category">Datorgrafik</p>
+
+                            <h3>Flying Space Ranger</h3>
+
+                            <p>
+                                En interaktiv 3D-värld skapad med C++, OpenGL,
+                                terränggenerering, kollisionshantering och
+                                kamerastyrning.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>C++</span>
+                                <span>OpenGL</span>
+                                <span>GLSL</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projekt.html#datorgrafik">
+                                    Om projektet
+                                </a>
+
+                                <a
+                                    href="DIN-DEMO-LANK"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Se demo ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Spelprojekt -->
+                    <article class="project-card">
+                        <img
+                            class="project-image"
+                            src="assets/images/spelprojekt.jpg"
+                            alt="Skärmbild från spelprojektet"
+                        >
+
+                        <div class="project-content">
+                            <p class="project-category">Spelutveckling</p>
+
+                            <h3>Spelprojekt i Python</h3>
+
+                            <p>
+                                Ett programmeringsprojekt med fokus på
+                                spelmekanik, problemlösning och interaktion.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Python</span>
+                                <span>Speldesign</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projekt.html#spelprojekt">
+                                    Om projektet
+                                </a>
+
+                                <a
+                                    href="DIN-SPEL-DEMO-LANK"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Se demo ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Appprojekt -->
+                    <article class="project-card">
+                        <img
+                            class="project-image"
+                            src="assets/images/appprojekt.jpg"
+                            alt="Skärmbild från Android-applikationen"
+                        >
+
+                        <div class="project-content">
+                            <p class="project-category">Applikationsutveckling</p>
+
+                            <h3>Android-applikation</h3>
+
+                            <p>
+                                En mobilapplikation utvecklad i Java inom
+                                kursen Mobila och sociala applikationer.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Java</span>
+                                <span>Android</span>
+                                <span>UX</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projekt.html#appprojekt">
+                                    Om projektet
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Starwyns -->
+                    <article class="project-card">
+                        <img
+                            class="project-image"
+                            src="assets/images/starwyns.jpg"
+                            alt="Konceptbild för berättelsen The Starwyns"
+                        >
+
+                        <div class="project-content">
+                            <p class="project-category">Kreativt skrivande</p>
+
+                            <h3>The Starwyns</h3>
+
+                            <p>
+                                Ett science fiction-äventyr om identitet,
+                                familj, ansvar och en värld som verkar perfekt
+                                på ytan.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Berättande</span>
+                                <span>Science fiction</span>
+                                <span>Världsbygge</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="projekt.html#starwyns">
+                                    Upptäck berättelsen
+                                </a>
+
+                                <a
+                                    href="DIN-SMAKPROV-LANK"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Läs ett smakprov ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="reports-banner">
+                    <div>
+                        <p class="eyebrow">Rapporter</p>
+                        <h2>Vill du läsa mer?</h2>
+
+                        <p>
+                            Mina utvalda projektrapporter finns samlade i en
+                            Google Drive-mapp.
+                        </p>
+                    </div>
+
+                    <a
+                        class="button light-button"
+                        href="DIN-GOOGLE-DRIVE-LANK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Öppna rapportmappen ↗
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer id="kontakt">
-        <h2>Kontakt</h2>
-        <p>
-            <a href="mailto:dinadress@example.com">E-post</a>
-            ·
-            <a href="https://www.linkedin.com/in/john-wernborg/">LinkedIn</a>
-            ·
-            <a href="https://github.com/johnwernborg02>GitHub</a>
-        </p>
+    <footer class="site-footer">
+        <div class="section-container footer-content">
+            <div>
+                <p class="footer-name">John Wernborg</p>
+                <p>Teknisk fysik, simulering och programmering.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="projekt.html">Projekt</a>
+                <a href="om-mig.html">Om mig</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
