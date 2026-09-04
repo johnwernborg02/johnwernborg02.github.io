@@ -1356,6 +1356,102 @@ p {
 }
 
 /* =========================
+   Kompakt typografi på undersidor
+   ========================= */
+
+/* Sidornas stora introduktionsrubriker */
+
+.page-hero h1,
+.contact-introduction h1,
+.project-page-heading h1 {
+    margin-bottom: 14px;
+    font-size: clamp(1.9rem, 3vw, 2.7rem);
+    line-height: 1.2;
+}
+
+.page-hero .page-introduction,
+.contact-introduction .page-introduction,
+.project-page-heading .page-introduction {
+    max-width: 760px;
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    line-height: 1.6;
+}
+
+/* Vanliga rubriker på undersidor */
+
+.about-content h2,
+.project-detail-content h2,
+.project-article h2 {
+    margin-bottom: 12px;
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+    line-height: 1.25;
+}
+
+.about-content h3,
+.project-detail-content h3,
+.project-article h3 {
+    margin-bottom: 9px;
+    font-size: 1.05rem;
+}
+
+/* Vanlig brödtext */
+
+.about-content p,
+.project-detail-content p,
+.project-article p,
+.contact-introduction p {
+    margin-bottom: 13px;
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+/* Listor på projektsidor */
+
+.project-article li {
+    margin-bottom: 6px;
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+/* Information i sidopaneler */
+
+.quick-facts,
+.project-sidebar,
+.contact-card {
+    font-size: 0.9rem;
+}
+
+.quick-facts h2,
+.project-sidebar h2 {
+    margin-bottom: 14px;
+    font-size: 1.15rem;
+}
+
+/* Projektrutor på den gemensamma projektsidan */
+
+.project-detail-content h2 {
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+}
+
+.project-detail-content > p:not(.project-category, .small-note) {
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+/* Mindre rubriker i rapport- och kontaktfält */
+
+.reports-banner h2,
+.cta-content h2 {
+    font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+}
+
+.reports-banner p,
+.cta-content p {
+    font-size: 0.9rem;
+}
+
+/* =========================
    Fokus och tillgänglighet
    ========================= */
 
