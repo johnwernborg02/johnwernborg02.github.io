@@ -59,46 +59,61 @@
                             Monte Carlo-simulering av vakanser i vanadiumnitrid
                         </h2>
 
-                        <p>
-                            Projektet undersökte vakansdefekter i vanadiumnitrid
-                            genom atomistiska simuleringar. En maskininlärd
-                            interatomär potential användes tillsammans med
-                            strukturell relaxation och Metropolis
-                            Monte Carlo-metoden.
-                        </p>
+<p>
+    Projektet undersökte hur placeringen av vanadin- och
+    kvävevakanser påverkar den relaxerade energin hos
+    vanadiumnitrid. Jag utvecklade ett Python-program som skapade
+    vakanskonfigurationer och genomförde Metropolis
+    Monte Carlo-simuleringar där vakanser och atomer bytte plats
+    inom respektive undergitter.
+</p>
 
-                        <p>
-                            Arbetet gav mig erfarenhet av beräkningsfysik,
-                            materialmodellering, dataanalys och hur man
-                            utvärderar resultat från numeriska simuleringar.
-                        </p>
+<p>
+    Efter varje föreslaget byte relaxerades atomernas positioner
+    med BFGS-algoritmen i ASE. Energi, krafter och spänningar
+    beräknades med en maskininlärd NequIP/Allegro-potential.
+    Simuleringarna GPU-accelererades med CUDA och kördes som
+    SLURM-jobb på Sigma-klustret.
+</p>
 
-                        <h3>Verktyg och metoder</h3>
+<p>
+    Simuleringar utfördes med olika startkonfigurationer, antal
+    Monte Carlo-steg, temperaturer och vakanskoncentrationer.
+    De lägsta energierna jämfördes med startkonfigurationerna
+    och vakansavstånden analyserades för att undersöka möjliga
+    ordningstendenser.
+</p>
 
-                        <div class="tag-list">
-                            <span>Python</span>
-                            <span>Monte Carlo</span>
-                            <span>Materialfysik</span>
-                            <span>Maskininlärda potentialer</span>
-                        </div>
+<p>
+    Samtliga undersökta körningar hittade konfigurationer med
+    lägre energi än de slumpmässiga startkonfigurationerna,
+    vilket visade att vakansernas relativa placering har mätbar
+    betydelse. Resultaten pekade samtidigt inte på någon enkel
+    och allmängiltig klustringsregel: energin berodde på den
+    detaljerade placeringen av båda vakanstyperna och på
+    simuleringens start- och samplingsvillkor.
+</p>
+
+<h3>Metoder och verktyg</h3>
+
+<div class="tag-list">
+    <span>Python</span>
+    <span>Metropolis Monte Carlo</span>
+    <span>ASE</span>
+    <span>NequIP/Allegro</span>
+    <span>CUDA</span>
+    <span>SLURM</span>
+    <span>OVITO</span>
+</div>
 
                         <div class="button-row">
                             <a
                                 class="button primary-button"
-                                href="DIN-GOOGLE-DRIVE-LANK"
+                                href="https://drive.google.com/file/d/1IsW0s4pEzVJUs5cbZT2PLNml2hTSAnV6/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 Läs rapporten ↗
-                            </a>
-
-                            <a
-                                class="button secondary-button"
-                                href="DIN-GITHUB-REPOSITORY-LANK"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Se kod ↗
                             </a>
                         </div>
                     </div>
@@ -116,32 +131,56 @@
                         <p class="project-category">Fysik och elektronik</p>
                         <h2>Kandidatprojekt: sveptunnelmikroskop</h2>
 
-                        <p>
-                            I kandidatprojektet utvecklade och utvärderade
-                            projektgruppen ett sveptunnelmikroskop. Projektet
-                            kombinerade fysik, elektronik, mekanisk konstruktion,
-                            mätteknik och reglering.
-                        </p>
+<p>
+    Målet med kandidatprojektet var att konstruera och ta i drift
+    ett fungerande sveptunnelmikroskop för avbildning av ytors
+    topografi med nanometerprecision. Jag var projektledare i den
+    sju personer stora projektgruppen och ansvarade för projektets
+    övergripande genomförande och kontakten med beställaren.
+</p>
 
-                        <p>
-                            Projektet tränade min förmåga att arbeta praktiskt
-                            med ett komplext tekniskt system där flera
-                            delsystem behöver fungera tillsammans.
-                        </p>
+<p>
+    Systemet byggdes av sju samverkande delsystem: spets,
+    grovjustering, återkoppling, strömdetektor, piezoskanner,
+    mjukvara och dämpningssystem. Grovjusteringen styrdes med en
+    stegmotor och återkopplingen implementerades i en Arduino Due
+    för att hålla tunnelströmmen mellan spetsen och provet konstant.
+</p>
 
-                        <h3>Verktyg och metoder</h3>
+<p>
+    Mjukvaran utvecklades i LabVIEW och styrde piezoskannerns
+    rörelse och insamlingen av mätdata via DAQ-kort. Användaren
+    kunde bland annat ställa in reglerparametrar, svephastighet,
+    startposition, spänning, tunnelström och antalet mätpunkter.
+    Mätningen visades kontinuerligt och kunde sparas som både
+    2D- och 3D-bild samt som mätdata.
+</p>
 
-                        <div class="tag-list">
-                            <span>Elektronik</span>
-                            <span>Reglering</span>
-                            <span>Mätteknik</span>
-                            <span>Fysik</span>
-                        </div>
+<p>
+    Eftersom tunnelströmmen är mycket känslig för avstånd och
+    yttre störningar ingick omfattande felsökning och
+    störningsdämpning. Det färdiga mikroskopet användes för att
+    framställa topografiska bilder av bland annat guld och platina.
+    Resultaten visade ytorna i både två och tre dimensioner och
+    kunde efterbehandlas för att minska oönskade effekter.
+</p>
+
+<h3>Metoder och verktyg</h3>
+
+<div class="tag-list">
+    <span>Projektledning</span>
+    <span>LabVIEW</span>
+    <span>Arduino Due</span>
+    <span>Reglering</span>
+    <span>Elektronik</span>
+    <span>Mätteknik</span>
+    <span>Nanoteknik</span>
+</div>
 
                         <div class="button-row">
                             <a
                                 class="button primary-button"
-                                href="DIN-GOOGLE-DRIVE-LANK"
+                                href="https://drive.google.com/file/d/1IsW0s4pEzVJUs5cbZT2PLNml2hTSAnV6/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -172,20 +211,39 @@
                         <p class="project-category">Datorgrafik</p>
                         <h2>Flying Space Ranger</h2>
 
-                        <p>
-                            Flying Space Ranger är en interaktiv 3D-värld
-                            utvecklad i C++ och OpenGL. Spelaren flyger över en
-                            vulkanisk terräng med möjlighet att växla mellan
-                            första- och tredjepersonskamera.
-                        </p>
+<p>
+    Flying Space Ranger är en interaktiv 3D-värld som utvecklades
+    i C++ med OpenGL, MicroGlut och shaders skrivna i GLSL.
+    Spelaren styr en flygande rymdfigur över ett vulkaniskt
+    landskap och kan växla mellan första- och
+    tredjepersonsperspektiv.
+</p>
 
-                        <p>
-                            Projektet innehåller bland annat terräng från en
-                            höjdkarta, texturer, ljussättning, kollisionsdetektion,
-                            kamerastyrning, 3D-modeller och shaders skrivna i GLSL.
-                        </p>
+<p>
+    Terrängen skapades från en höjdkarta och kombinerades med
+    separata texturer för den vulkaniska marken och lavan. För
+    att spelaren skulle kunna röra sig i förhållande till
+    landskapet implementerades kollisionsdetektion där
+    terrängens höjd beräknades med bilinjär interpolation.
+</p>
 
-                        <h3>Verktyg och metoder</h3>
+<p>
+    Kameran och spelarens rörelser byggdes med riktningar
+    beräknade från gir- och stigningsvinklar. Spelaren kan
+    svänga, stiga, sjunka och ändra sin lutning, samtidigt som
+    stigningsvinkeln begränsas för att undvika att kameran
+    vänds fel.
+</p>
+
+<p>
+    Miljön innehåller även en rymdbaserad skybox, en texturerad
+    sol och ljussättning med omgivningsljus och riktat
+    diffusljus. Projektet gav praktisk erfarenhet av
+    3D-transformationer, kameraorientering, terränghantering,
+    texturering, shaders och realtidsrendering.
+</p>
+
+                        <h3>Metoder och verktyg</h3>
 
                         <div class="tag-list">
                             <span>C++</span>
@@ -353,7 +411,7 @@
                 >
                     <div class="project-detail-image">
                         <img
-                            src="assets/images/matlab-differentialekvation.png"
+                            src="assets/images/tana21-graf.png"
                             alt="Numerisk och exakt lösning av en linjär differentialekvation"
                         >
                     </div>
@@ -424,7 +482,7 @@
                 >
                     <div class="project-detail-image">
                         <img
-                            src="assets/images/y55-jubileumskatalog.jpg"
+                            src="assets/images/y55-katalog.jpg"
                             alt="Jubileumskatalog för Y-sektionens 55-årsjubileum"
                         >
                     </div>
